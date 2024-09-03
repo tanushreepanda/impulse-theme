@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Impulse Theme</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+
+<body>
+    <div class="header">
+        <div class="info-section">
+            <ul class="info-section--list">
+                <li class="info-section--list--item"><a href="#">About</a></li>
+                <li class="info-section--list--item"><a href="#">Contact</a></li>
+                <li class="info-section--list--item"><a href="#">FAQ</a></li>
+            </ul>
+        </div>
+        <div class="social-and-coin">
+            <div class="social">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                    <path
+                        d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                    <path
+                        d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-2 10h-2v2h2v6h3v-6h1.82l.18-2h-2v-.833c0-.478.096-.667.558-.667h1.442v-2.5h-2.404c-1.798 0-2.596.792-2.596 2.308v1.692z" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                    <path
+                        d="M12 0c-6.627 0-12 5.372-12 12 0 5.084 3.163 9.426 7.627 11.174-.105-.949-.2-2.405.042-3.441.218-.937 1.407-5.965 1.407-5.965s-.359-.719-.359-1.782c0-1.668.967-2.914 2.171-2.914 1.023 0 1.518.769 1.518 1.69 0 1.029-.655 2.568-.994 3.995-.283 1.194.599 2.169 1.777 2.169 2.133 0 3.772-2.249 3.772-5.495 0-2.873-2.064-4.882-5.012-4.882-3.414 0-5.418 2.561-5.418 5.207 0 1.031.397 2.138.893 2.738.098.119.112.224.083.345l-.333 1.36c-.053.22-.174.267-.402.161-1.499-.698-2.436-2.889-2.436-4.649 0-3.785 2.75-7.262 7.929-7.262 4.163 0 7.398 2.967 7.398 6.931 0 4.136-2.607 7.464-6.227 7.464-1.216 0-2.359-.631-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146 1.124.347 2.317.535 3.554.535 6.627 0 12-5.373 12-12 0-6.628-5.373-12-12-12z"
+                        fill-rule="evenodd" clip-rule="evenodd" />
+                </svg>
+            </div>
+            <div class="coin">
+                <div class="dropdown">
+                    <div id="dropdown-select" class="dropdown-select">Select a country</div>
+                    <div id="dropdown-menu" class="dropdown-menu"></div>
+                    <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiPjxwYXRoIGQ9Ik0yMy4yNDUgNGwtMTEuMjQ1IDE0LjM3NC0xMS4yMTktMTQuMzc0LS43ODEuNjE5IDEyIDE1LjM4MSAxMi0xNS4zOTEtLjc1NS0uNjA5eiIvPjwvc3ZnPg=="
+                        class="down-arrow">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="main-header">
+        <div class="menu-toggle">
+            <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd">
+                <path d="M24 18v1h-24v-1h24zm0-6v1h-24v-1h24zm0-6v1h-24v-1h24z" fill="#1040e2" />
+                <path d="M24 19h-24v-1h24v1zm0-6h-24v-1h24v1zm0-6h-24v-1h24v1z" />
+            </svg>
+        </div>
+        <div class="search-button">
+            <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd">
+                <path
+                    d="M15.853 16.56c-1.683 1.517-3.911 2.44-6.353 2.44-5.243 0-9.5-4.257-9.5-9.5s4.257-9.5 9.5-9.5 9.5 4.257 9.5 9.5c0 2.442-.923 4.67-2.44 6.353l7.44 7.44-.707.707-7.44-7.44zm-6.353-15.56c4.691 0 8.5 3.809 8.5 8.5s-3.809 8.5-8.5 8.5-8.5-3.809-8.5-8.5 3.809-8.5 8.5-8.5z" />
+            </svg>
+        </div>
+        <div class="main-header--elements-left">
+            <ul class="main-header--elements-left--list">
+                <li class="main-header--elements-left--list--items--shop">SHOP</li>
+                <li class="main-header--elements-left--list--items--season">SEASON</li>
+            </ul>
+        </div>
+        <div class="theme-logo">
+            <img
+                src="https://impulse-theme-fashion.myshopify.com/cdn/shop/files/logo-black-38px_7361969b-816c-4fec-a442-9f24e767ae50.png?v=1613698464&width=110">
+        </div>
+        <div class="main-header--elements-right">
+            <ul class="main-header--elements-right--list">
+                <li class="main-header--elements-right--list--items-journal">JOURNAL</li>
+                <li class="main-header--elements-right--list--items-theme">THEME FEATURES</li>
+            </ul>
+        </div>
+        <div class="login-cart">
+            <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd">
+                <path
+                    d="M12 0c-5.083 0-8.465 4.949-3.733 13.678 1.596 2.945-1.725 3.641-5.09 4.418-3.073.709-3.187 2.235-3.177 4.904l.004 1h23.99l.004-.969c.012-2.688-.093-4.223-3.177-4.935-3.438-.794-6.639-1.49-5.09-4.418 4.719-8.912 1.251-13.678-3.731-13.678m0 1c1.89 0 3.39.764 4.225 2.15 1.354 2.251.866 5.824-1.377 10.06-.577 1.092-.673 2.078-.283 2.932.937 2.049 4.758 2.632 6.032 2.928 2.303.534 2.412 1.313 2.401 3.93h-21.998c-.01-2.615.09-3.396 2.401-3.93 1.157-.266 5.138-.919 6.049-2.94.387-.858.284-1.843-.304-2.929-2.231-4.115-2.744-7.764-1.405-10.012.84-1.412 2.353-2.189 4.259-2.189" />
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                <path
+                    d="M20 7h-4v-3c0-2.209-1.791-4-4-4s-4 1.791-4 4v3h-4l-2 17h20l-2-17zm-11-3c0-1.654 1.346-3 3-3s3 1.346 3 3v3h-6v-3zm-4.751 18l1.529-13h2.222v1.5c0 .276.224.5.5.5s.5-.224.5-.5v-1.5h6v1.5c0 .276.224.5.5.5s.5-.224.5-.5v-1.5h2.222l1.529 13h-15.502z" />
+            </svg>
+        </div>
+    </div>
+    <div class="menu-drawer">
+        <div class="cross-img">
+            <svg clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2"
+                viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="m12 10.93 5.719-5.72c.146-.146.339-.219.531-.219.404 0 .75.324.75.749 0 .193-.073.385-.219.532l-5.72 5.719 5.719 5.719c.147.147.22.339.22.531 0 .427-.349.75-.75.75-.192 0-.385-.073-.531-.219l-5.719-5.719-5.719 5.719c-.146.146-.339.219-.531.219-.401 0-.75-.323-.75-.75 0-.192.073-.384.22-.531l5.719-5.719-5.72-5.719c-.146-.147-.219-.339-.219-.532 0-.425.346-.749.75-.749.192 0 .385.073.531.219z" />
+            </svg>
+        </div>
+        <div class="menu-item">
+            <div class="shop-menu">
+                <span>SHOP</span>
+                <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiPjxwYXRoIGQ9Ik0yMy4yNDUgNGwtMTEuMjQ1IDE0LjM3NC0xMS4yMTktMTQuMzc0LS43ODEuNjE5IDEyIDE1LjM4MSAxMi0xNS4zOTEtLjc1NS0uNjA5eiIvPjwvc3ZnPg=="
+                    class="shop-arrow">
+            </div>
+            <div class="shop-menu-item">
+                <ul>
+                    <li>Tops</li>
+                    <li>Tunics</li>
+                    <li>Dresses</li>
+                    <li>Accessories</li>
+                </ul>
+            </div>
+            <div class="season-menu">
+                <span>SEASON</span>
+                <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiPjxwYXRoIGQ9Ik0yMy4yNDUgNGwtMTEuMjQ1IDE0LjM3NC0xMS4yMTktMTQuMzc0LS43ODEuNjE5IDEyIDE1LjM4MSAxMi0xNS4zOTEtLjc1NS0uNjA5eiIvPjwvc3ZnPg=="
+                    class="season-arrow">
+            </div>
+            <div class="season-menu-item">
+                <ul>
+                    <li>Spring 2022</li>
+                    <li>Summer 2022</li>
+                    <li>Fall 2022</li>
+                    <li>Winter 2022</li>
+                </ul>
+            </div>
+            <div class="jounal-menu">JOURNAL</div>
+            <div class="theme-menu">THEME FEATURES</div>
+            <div class="menu-others">
+                <div class="menu-others-items">
+                    <span>About</span>
+                    <span>Contact</span>
+                </div>
+                <div class="menu-others-items">
+                    <span>FAQ</span>
+                    <span>Log in</span>
+                </div>
+            </div>
+            <div class="social-menu">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                    <path
+                        d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                    <path
+                        d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-2 10h-2v2h2v6h3v-6h1.82l.18-2h-2v-.833c0-.478.096-.667.558-.667h1.442v-2.5h-2.404c-1.798 0-2.596.792-2.596 2.308v1.692z" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                    <path
+                        d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm0 19c-.721 0-1.418-.109-2.073-.312.286-.465.713-1.227.87-1.835l.437-1.664c.229.436.895.804 1.604.804 2.111 0 3.633-1.941 3.633-4.354 0-2.312-1.888-4.042-4.316-4.042-3.021 0-4.625 2.027-4.625 4.235 0 1.027.547 2.305 1.422 2.712.132.062.203.034.234-.094l.193-.793c.017-.071.009-.132-.049-.202-.288-.35-.521-.995-.521-1.597 0-1.544 1.169-3.038 3.161-3.038 1.72 0 2.924 1.172 2.924 2.848 0 1.894-.957 3.205-2.201 3.205-.687 0-1.201-.568-1.036-1.265.197-.833.58-1.73.58-2.331 0-.537-.288-.986-.886-.986-.702 0-1.268.727-1.268 1.7 0 .621.211 1.04.211 1.04s-.694 2.934-.821 3.479c-.142.605-.086 1.454-.025 2.008-2.603-1.02-4.448-3.553-4.448-6.518 0-3.866 3.135-7 7-7s7 3.134 7 7-3.135 7-7 7z" />
+                </svg>
+            </div>
+        </div>
+    </div>
+    <div class="shop-container">
+        <div class="shop-container--items">
+            <img
+                src="https://impulse-theme-fashion.myshopify.com/cdn/shop/collections/Stocksy_txp20325e509vv100_Medium_1336830-cropped.jpg?v=1569860569&width=832">
+            <h3>TOPS</h3>
+            <span>Long sleeve</span><br>
+            <span>3/4 sleeve</span><br>
+            <span>Half sleeve</span><br>
+            <span>Short sleeve</span><br>
+            <span>Sleeveless</span>
+        </div>
+        <div class="shop-container--items">
+            <img
+                src="https://impulse-theme-fashion.myshopify.com/cdn/shop/collections/pikosnellville_sg-72-cropped.jpg?v=1525111773&width=832">
+            <h3>TUNICS</h3>
+            <span>Long sleeve</span><br>
+            <span>3/4 sleeve</span><br>
+            <span>Short sleeve</span>
+        </div>
+        <div class="shop-container--items">
+            <img
+                src="https://impulse-theme-fashion.myshopify.com/cdn/shop/collections/piko-snellville_sg-46-cropped-centered-sharpened.jpg?v=1569860539&width=832">
+            <h3>DRESSES</h3>
+            <span>Long sleeve</span><br>
+            <span>3/4 sleeve</span><br>
+            <span>Short sleeve</span><br>
+            <span>Maxi dresses</span>
+        </div>
+        <div class="shop-container--items">
+            <img
+                src="https://impulse-theme-fashion.myshopify.com/cdn/shop/collections/pikosnellville_sg-39-cropped.jpg?v=1569861233&width=832">
+            <h3>ACCESSORIES</h3>
+            <span>View all</span>
+        </div>
+    </div>
+    <div class="season-container">
+        <div class="season-container-items">
+            <img
+                src="https://impulse-theme-fashion.myshopify.com/cdn/shop/collections/spring.jpg?v=1525296055&width=352">
+            <h3>SPRING 2022</h3>
+            <span>View all</span>
+        </div>
+        <div class="season-container-items">
+            <img
+                src="https://impulse-theme-fashion.myshopify.com/cdn/shop/collections/summer.jpg?v=1525296030&width=352">
+            <h3>SUMMER 2022</h3>
+            <span>View all</span>
+        </div>
+        <div class="season-container-items">
+            <img src="https://impulse-theme-fashion.myshopify.com/cdn/shop/collections/fall.jpg?v=1569861336&width=352">
+            <h3>FALL 2022</h3>
+            <span>View all</span>
+        </div>
+        <div class="season-container-items">
+            <img
+                src="https://impulse-theme-fashion.myshopify.com/cdn/shop/collections/winter.jpg?v=1525296094&width=352">
+            <h3>WINTER 2022</h3>
+            <span>View all</span>
+        </div>
+    </div>
+    <div class="swiper mySwiper text-slider">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide text">HASSLE-FREE RETURNS 30-days postage paid returns</div>
+            <div class="swiper-slide text">FREE SHIPPING On all orders over $100</div>
+        </div>
+    </div>
+
+    <div class="swiper-container image-slider">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide image-container1">
+                <img
+                    src="https://impulse-theme-fashion.myshopify.com/cdn/shop/files/jake-nackos-6bZpakcaqbg-unsplash.png?v=1716933019&width=1920">
+                <div class="image-container-description1">
+                    <h1>INSPIRED BY NATURE</h1>
+                    <button>SHOP SWIMMING SUITS</button>
+                </div>
+            </div>
+            <div class="swiper-slide image-container2">
+                <img
+                    src="https://impulse-theme-fashion.myshopify.com/cdn/shop/files/james-lewis-ohiyigDmlYc-unsplash.png?v=1716933021&width=1920">
+                <div class="image-container-description2">
+                    <h1>SUMMER ESSENTIAL</h1>
+                    <button>SHOP ALL</button>
+                </div>
+            </div>
+            <div class="swiper-slide image-container3">
+                <img
+                    src="https://impulse-theme-fashion.myshopify.com/cdn/shop/files/unsplash_xw5cQNbky5A.png?v=1716933020&width=1920">
+                <div class="image-container-description3">
+                    <h1>SPRING STYLE</h1>
+                    <h3>Fresh Look For Sunny Days</h3>
+                    <button>SHOP ALL</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="timer">
+        <div class="timer--description">
+            <h1>FLASH SALE</h1>
+            <span>get 20% off if you spend 120$ or more!</span>
+        </div>
+        <div class="timer--container">
+
+        </div>
+    </div>
+    <div class="category">
+        <h1>SHOP BY CATEGORY</h1>
+        <div class="category--image">
+            <div class="image1">
+                <img
+                    src="https://impulse-theme-fashion.myshopify.com/cdn/shop/products/T185143-Heather-1.jpg?v=1584465598&width=720">
+                <span>TOPS</span>
+            </div>
+            <div class="image2">
+                <img
+                    src="https://impulse-theme-fashion.myshopify.com/cdn/shop/products/WTY387-TAUPE-1.jpg?v=1526306264&width=720">
+                <span>TUNICS</span>
+            </div>
+            <div class="image3">
+                <img
+                    src="https://impulse-theme-fashion.myshopify.com/cdn/shop/products/WDY338-Army-2.jpg?v=1584465912&width=720">
+                <span>DRESSES</span>
+            </div>
+            <div class="image4">
+                <img
+                    src="https://impulse-theme-fashion.myshopify.com/cdn/shop/products/WTY489-Midnight-Teal-1.jpg?v=1526306247&width=720">
+                <span>SWEATSHIRTS</span>
+            </div>
+        </div>
+    </div>
+    <div class="beach--gift">
+        <div class="beach">
+            <img
+                src="https://impulse-theme-fashion.myshopify.com/cdn/shop/files/polina-kuzovkova-HSHXznrNAMc-unsplash.png?v=1716933020&width=832">
+            <div class="beach-description">
+                <span>TIME TO GET</span>
+                <h1>BEACH READY</h1>
+                <button>SHOP SWIM</button>
+                <button>SHOP ALL</button>
+            </div>
+        </div>
+        <div class="gift">
+            <img
+                src="https://impulse-theme-fashion.myshopify.com/cdn/shop/files/gift-card-cropped.jpg?v=1614307589&width=832">
+            <div class="gift-description">
+                <h1>GIFT CARDS</h1>
+                <h4>Help Support Local Business by buying a gift card.</h4>
+                <h4>Local pickup Available</h4>
+                <button>SHOP GIFT CARDS</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="quote">
+        <span>Fashion inspired by where we're from — the sunny shores of California.</span>
+        <span>Products provided by PIKO</span>
+    </div>
+    <div class="banner">
+        <img
+            src="https://impulse-theme-fashion.myshopify.com/cdn/shop/files/cesar-la-rosa-HbAddptme1Q-unsplash.png?v=1716933021&width=1920">
+        <div class="banner-description">
+            <span>SHOP ESSENTIAL</span>
+            <h1>B&W CAPSULE</h1>
+            <span>Get the perfect look for your fall classic wardrobe.</span><br>
+            <button>SHOP BAGS</button>
+            <button>SHOP ALL</button>
+        </div>
+    </div>
+    <div class="offer-with-image">
+        <div class="offer-with-image1">
+            <div class="offer-description">
+                <h3>UP TO</h3>
+                <h1>50%</h1>
+                <h3>SELECT PRODUCTS</h3>
+            </div>
+            <img
+                src="https://impulse-theme-fashion.myshopify.com/cdn/shop/products/WDY277-Heather-Gray-1.jpg?v=1526306282&width=540">
+            <img
+                src="https://impulse-theme-fashion.myshopify.com/cdn/shop/products/WDY538-Chelsea-Gray-1.jpg?v=1526306279&width=540">
+        </div>
+        <div class="offer-with-image2">
+            <div class="offer-description">
+                <h3>UP TO</h3>
+                <h1>25%</h1>
+                <h3>SUMMER TOPS</h3>
+            </div>
+            <img
+                src="https://impulse-theme-fashion.myshopify.com/cdn/shop/products/T185143-Heather-1.jpg?v=1584465598&width=540">
+            <img
+                src="https://impulse-theme-fashion.myshopify.com/cdn/shop/products/WTY518-Ivory-1.jpg?v=1526306247&width=540">
+        </div>
+    </div>
+    <div class="popular-picks">
+        <div class="popular-picks-heading">
+            <h1>Popular picks</h1>
+            <button>View All</button>
+        </div>
+        <div class="popular-picks-images">
+            <div class="popular-picks-image1">
+                <img
+                    src="https://impulse-theme-fashion.myshopify.com/cdn/shop/products/WTY437-Dove-Gray-1_3aae5855-2fe4-472d-b3bb-f0941cc50a8d.jpg?v=1609257705&width=540"><br>
+                <span>Dove Gray Dolman Sleeve</span><br>
+                <span>Rs. 4,200.00</span>
+            </div>
+            <div class="popular-picks-image2">
+                <img
+                    src="https://impulse-theme-fashion.myshopify.com/cdn/shop/products/WDY338-Army-2.jpg?v=1584465912&width=540"><br>
+                <span>Army Babydoll Dress</span><br>
+                <span>Rs. 3,900.00</span>
+                <span class="popup">Best selling</span>
+            </div>
+            <div class="popular-picks-image3">
+                <img
+                    src="https://impulse-theme-fashion.myshopify.com/cdn/shop/products/D2805-White-1.jpg?v=1584465905&width=540"><br>
+                <span>White V-Neck Short Sleeve Tunic</span><br>
+                <span class="decoration">Rs. 4,200.00</span>
+                <span>Rs. 3,400.00</span>
+                <span class="clr">Save Rs. 800.00</span>
+                <span class="popup">Sale</span>
+            </div>
+            <div class="popular-picks-image4">
+                <img
+                    src="https://impulse-theme-fashion.myshopify.com/cdn/shop/products/WTY550-Dark-Heather-Gray-1.jpg?v=1526306288&width=1080"><br>
+                <span>Color Block Pocket Tee</span><br>
+                <span>Rs. 3,400.00</span>
+                <span class="popup">Sold Out</span>
+            </div>
+        </div>
+    </div>
+    <div class="image-quote">
+        <img
+            src="https://impulse-theme-fashion.myshopify.com/cdn/shop/files/woven_greenhouse_sg-20_15493a52-52f3-4708-a305-a8a9dec823b7.jpg?v=1629216493&width=1920">
+        <div class="quotation">
+            <span>NEW FOR 2024</span>
+            <h1>BOUTIQUE STYLE</h1>
+            <p>Fierce elegance is about authenticity, refinement, beauty and grace. It’s a powerful lady like class with
+                a touch of sophisticated sass that creates a sleek and commanding presence.</p>
+            <button>VIEW LOOKBOOK</button>
+        </div>
+    </div>
+    <div class="shop-look">
+        <div class="only-img">
+            <img
+                src="https://impulse-theme-fashion.myshopify.com/cdn/shop/files/unsplash_ao7GtnjcBzo.png?v=1716933021&width=1200">
+        </div>
+        <div class="image-title">
+            <img
+                src="https://impulse-theme-fashion.myshopify.com/cdn/shop/products/WTY597-Rosewood-1.jpg?v=1526306250&width=540"><br>
+            <span>ROSEWOOD DLMN KNOTTED HIGH-LOW TOP</span><br>
+            <span>Rs.3900.00</span>
+        </div>
+    </div>
+
+    <div class="from-the-journal">
+        <div class="from-the-journal-heading">
+            <h1>FROM THE JOURNAL</h1>
+            <button>VIEW ALL</button>
+        </div>
+        <div class="from-the-journal-images">
+            <div class="from-the-journal-image">
+                <img
+                    src="https://impulse-theme-fashion.myshopify.com/cdn/shop/articles/pikosnellville_sg-72-cropped.jpg?v=1525115121&width=720"><br>
+                <div class="from-the-journal-image-text">
+                    <span>May 10, 2018</span><br>
+                    <span>Looks we love</span>
+                </div>
+            </div>
+            <div class="from-the-journal-image">
+                <img
+                    src="https://impulse-theme-fashion.myshopify.com/cdn/shop/articles/blog5.jpg?v=1528827742&width=720"><br>
+                <div class="from-the-journal-image-text">
+                    <span>May 01, 2018</span><br>
+                    <span>10 ways to unwind</span>
+                </div>
+            </div>
+            <div class="from-the-journal-image">
+                <img
+                    src="https://impulse-theme-fashion.myshopify.com/cdn/shop/articles/Stocksy_txp20325e509vv100_Medium_1336830.jpg?v=1525115138&width=720"><br>
+                <div class="from-the-journal-image-text">
+                    <span>Apr 30, 2018</span><br>
+                    <span>Featured designer: Bethany jones</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="map">
+        <img
+            src="https://impulse-theme-fashion.myshopify.com/cdn/shop/files/Screenshot_2024-05-28_at_6.01.42_PM.png?v=1716933724&width=1200">
+        <div class="map-content">
+            <h1>LOCAL PICKUP AVAILABLE</h1>
+            <p>301 Front St W</p>
+            <p>Toronto, Canada</p>
+            <div class="time-map">
+                <span>Mon - Fri, 8:30am - 10:30pm</span><br>
+                <span>Saturday, 8:30am - 10:30pm</span><br>
+                <span>Sunday, 8:30am - 10:30pm</span><br>
+            </div>
+            <button>GET DIRECTION</button>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="dress-collection">
+            <span>Tops</span><br>
+            <span>Tunics</span><br>
+            <span>Dresses</span><br>
+            <span>Sweatshirts</span><br>
+        </div>
+        <div class="footer-season">
+            <span>Spring 2022</span><br>
+            <span>Summer 2022</span><br>
+            <span>Winter 2022</span><br>
+            <span>Fall 2022</span><br>
+        </div>
+        <div class="footer-contact">
+            <span>About</span><br>
+            <span>Contact</span><br>
+            <span>FAQ</span><br>
+        </div>
+        <div class="footer-mail">
+            <p>Be the first to know about our biggest and best sales.</p>
+            <p> We'll never send more than one email a month.</p>
+            <div class="mail">
+                <input type="text" placeholder="Enter Your email">
+                <img
+                    src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiPjxwYXRoIGQ9Ik0yNCAyMWgtMjR2LTE4aDI0djE4em0tMjMtMTYuNDc3djE1LjQ3N2gyMnYtMTUuNDc3bC0xMC45OTkgMTAtMTEuMDAxLTEwem0yMS4wODktLjUyM2gtMjAuMTc2bDEwLjA4OCA5LjE3MSAxMC4wODgtOS4xNzF6Ii8+PC9zdmc+">
+            </div>
+
+            <div class="footer-logo">
+                <img
+                    src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBkPSJNMTIgMi4xNjNjMy4yMDQgMCAzLjU4NC4wMTIgNC44NS4wNyAzLjI1Mi4xNDggNC43NzEgMS42OTEgNC45MTkgNC45MTkuMDU4IDEuMjY1LjA2OSAxLjY0NS4wNjkgNC44NDkgMCAzLjIwNS0uMDEyIDMuNTg0LS4wNjkgNC44NDktLjE0OSAzLjIyNS0xLjY2NCA0Ljc3MS00LjkxOSA0LjkxOS0xLjI2Ni4wNTgtMS42NDQuMDctNC44NS4wNy0zLjIwNCAwLTMuNTg0LS4wMTItNC44NDktLjA3LTMuMjYtLjE0OS00Ljc3MS0xLjY5OS00LjkxOS00LjkyLS4wNTgtMS4yNjUtLjA3LTEuNjQ0LS4wNy00Ljg0OSAwLTMuMjA0LjAxMy0zLjU4My4wNy00Ljg0OS4xNDktMy4yMjcgMS42NjQtNC43NzEgNC45MTktNC45MTkgMS4yNjYtLjA1NyAxLjY0NS0uMDY5IDQuODQ5LS4wNjl6bTAtMi4xNjNjLTMuMjU5IDAtMy42NjcuMDE0LTQuOTQ3LjA3Mi00LjM1OC4yLTYuNzggMi42MTgtNi45OCA2Ljk4LS4wNTkgMS4yODEtLjA3MyAxLjY4OS0uMDczIDQuOTQ4IDAgMy4yNTkuMDE0IDMuNjY4LjA3MiA0Ljk0OC4yIDQuMzU4IDIuNjE4IDYuNzggNi45OCA2Ljk4IDEuMjgxLjA1OCAxLjY4OS4wNzIgNC45NDguMDcyIDMuMjU5IDAgMy42NjgtLjAxNCA0Ljk0OC0uMDcyIDQuMzU0LS4yIDYuNzgyLTIuNjE4IDYuOTc5LTYuOTguMDU5LTEuMjguMDczLTEuNjg5LjA3My00Ljk0OCAwLTMuMjU5LS4wMTQtMy42NjctLjA3Mi00Ljk0Ny0uMTk2LTQuMzU0LTIuNjE3LTYuNzgtNi45NzktNi45OC0xLjI4MS0uMDU5LTEuNjktLjA3My00Ljk0OS0uMDczem0wIDUuODM4Yy0zLjQwMyAwLTYuMTYyIDIuNzU5LTYuMTYyIDYuMTYyczIuNzU5IDYuMTYzIDYuMTYyIDYuMTYzIDYuMTYyLTIuNzU5IDYuMTYyLTYuMTYzYzAtMy40MDMtMi43NTktNi4xNjItNi4xNjItNi4xNjJ6bTAgMTAuMTYyYy0yLjIwOSAwLTQtMS43OS00LTQgMC0yLjIwOSAxLjc5MS00IDQtNHM0IDEuNzkxIDQgNGMwIDIuMjEtMS43OTEgNC00IDR6bTYuNDA2LTExLjg0NWMtLjc5NiAwLTEuNDQxLjY0NS0xLjQ0MSAxLjQ0cy42NDUgMS40NCAxLjQ0MSAxLjQ0Yy43OTUgMCAxLjQzOS0uNjQ1IDEuNDM5LTEuNDRzLS42NDQtMS40NC0xLjQzOS0xLjQ0eiIvPjwvc3ZnPg==">
+                <img
+                    src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBkPSJNMTIgMGMtNi42MjcgMC0xMiA1LjM3My0xMiAxMnM1LjM3MyAxMiAxMiAxMiAxMi01LjM3MyAxMi0xMi01LjM3My0xMi0xMi0xMnptMyA4aC0xLjM1Yy0uNTM4IDAtLjY1LjIyMS0uNjUuNzc4djEuMjIyaDJsLS4yMDkgMmgtMS43OTF2N2gtM3YtN2gtMnYtMmgydi0yLjMwOGMwLTEuNzY5LjkzMS0yLjY5MiAzLjAyOS0yLjY5MmgxLjk3MXYzeiIvPjwvc3ZnPg==">
+                <img
+                    src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBkPSJNMTIgMGMtNi42MjcgMC0xMiA1LjM3Mi0xMiAxMiAwIDUuMDg0IDMuMTYzIDkuNDI2IDcuNjI3IDExLjE3NC0uMTA1LS45NDktLjItMi40MDUuMDQyLTMuNDQxLjIxOC0uOTM3IDEuNDA3LTUuOTY1IDEuNDA3LTUuOTY1cy0uMzU5LS43MTktLjM1OS0xLjc4MmMwLTEuNjY4Ljk2Ny0yLjkxNCAyLjE3MS0yLjkxNCAxLjAyMyAwIDEuNTE4Ljc2OSAxLjUxOCAxLjY5IDAgMS4wMjktLjY1NSAyLjU2OC0uOTk0IDMuOTk1LS4yODMgMS4xOTQuNTk5IDIuMTY5IDEuNzc3IDIuMTY5IDIuMTMzIDAgMy43NzItMi4yNDkgMy43NzItNS40OTUgMC0yLjg3My0yLjA2NC00Ljg4Mi01LjAxMi00Ljg4Mi0zLjQxNCAwLTUuNDE4IDIuNTYxLTUuNDE4IDUuMjA3IDAgMS4wMzEuMzk3IDIuMTM4Ljg5MyAyLjczOC4wOTguMTE5LjExMi4yMjQuMDgzLjM0NWwtLjMzMyAxLjM2Yy0uMDUzLjIyLS4xNzQuMjY3LS40MDIuMTYxLTEuNDk5LS42OTgtMi40MzYtMi44ODktMi40MzYtNC42NDkgMC0zLjc4NSAyLjc1LTcuMjYyIDcuOTI5LTcuMjYyIDQuMTYzIDAgNy4zOTggMi45NjcgNy4zOTggNi45MzEgMCA0LjEzNi0yLjYwNyA3LjQ2NC02LjIyNyA3LjQ2NC0xLjIxNiAwLTIuMzU5LS42MzEtMi43NS0xLjM3OGwtLjc0OCAyLjg1M2MtLjI3MSAxLjA0My0xLjAwMiAyLjM1LTEuNDkyIDMuMTQ2IDEuMTI0LjM0NyAyLjMxNy41MzUgMy41NTQuNTM1IDYuNjI3IDAgMTItNS4zNzMgMTItMTIgMC02LjYyOC01LjM3My0xMi0xMi0xMnoiIGZpbGwtcnVsZT0iZXZlbm9kZCIgY2xpcC1ydWxlPSJldmVub2RkIi8+PC9zdmc+">
+            </div>
+        </div>
+    </div>
+    <div class="footer-coin">
+        <div class="footer-dropdown">
+            <div id="footer-dropdown-select" class="footer-dropdown-select">Select a country</div>
+            <div id="footer-dropdown-menu" class="footer-dropdown-menu"></div>
+            <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiPjxwYXRoIGQ9Ik0yMy4yNDUgNGwtMTEuMjQ1IDE0LjM3NC0xMS4yMTktMTQuMzc0LS43ODEuNjE5IDEyIDE1LjM4MSAxMi0xNS4zOTEtLjc1NS0uNjA5eiIvPjwvc3ZnPg=="
+                class="footer-down-arrow">
+        </div>
+    </div>
+    <div class="payment-cards">
+        <div class="payment-cards-image">
+            <img
+                src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBkPSJNMTkuNjYyIDExLjE1NmwuMzc1IDEuNzE2aC0xLjM0NGwuNjQ1LTEuNjYxLjIxNS0uNTY3LjEwOS41MTJ6bTQuMzM4LTUuMTU2djEyYzAgMS4xMDQtLjg5NiAyLTIgMmgtMjBjLTEuMTA0IDAtMi0uODk2LTItMnYtMTJjMC0xLjEwNC44OTYtMiAyLTJoMjBjMS4xMDQgMCAyIC44OTYgMiAyem0tMTcuMTQ2IDguOTcxbDIuNTQ5LTUuOTI5aC0xLjcxNWwtMS41ODUgNC4wNTEtLjE2OS0uODIzLS41NjgtMi43M2MtLjA5OC0uMzc3LS4zODMtLjQ4OS0uNzM0LS41MDJoLTIuNjExbC0uMDIxLjEyM2MuNjM1LjE1NCAxLjIwMy4zNzYgMS43MDEuNjUxbDEuNDQgNS4xNiAxLjcxMy0uMDAxem00LjgyMy01LjkzNGgtMS42MTlsLTEuMDEyIDUuOTQxaDEuNjE5bDEuMDEyLTUuOTQxem00LjYyNSAzLjk5OWMuMDA2LS42NzYtLjQyNS0xLjE5LTEuMzU5LTEuNjE0LS41NjYtLjI3NS0uOTEzLS40NTgtLjkwOS0uNzM2IDAtLjI0Ny4yOTMtLjUxMS45MjctLjUxMS41My0uMDA4LjkxMy4xMDcgMS4yMTIuMjI4bC4xNDUuMDY4LjIxOS0xLjI4N2MtLjMyMS0uMTIxLS44MjQtLjI1LTEuNDUxLS4yNS0xLjYgMC0yLjcyNy44MDYtMi43MzcgMS45NjEtLjAwOS44NTQuODA1IDEuMzMgMS40MTkgMS42MTQuNjMuMjkxLjg0Mi40NzcuODM5LjczNy0uMDA0LjM5OC0uNTAzLjU4LS45NjkuNTgtLjY0OCAwLS45OTItLjA5LTEuNTI0LS4zMTJsLS4yMDktLjA5NS0uMjI3IDEuMzNjLjM3OC4xNjYgMS4wNzguMzEgMS44MDQuMzE3IDEuNzAyIDAgMi44MDctLjc5NyAyLjgyLTIuMDN6bTUuNjk4IDEuOTQ0bC0xLjMxMS01LjkzN2gtMS4yNTFjLS4zODggMC0uNjc4LjEwNi0uODQ4LjQ5M2wtMi40MDUgNS40NDRoMS43bC4zNDEtLjg5MyAyLjA3NC4wMDMuMTk3Ljg5aDEuNTAzeiIvPjwvc3ZnPg==">
+            <img
+                src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBkPSJNMTUuNDY1IDE2LjQ0NGMwIC4xOTMtLjEyOC4zMzktLjMxOS4zMzktLjE5OSAwLS4zMjEtLjE1My0uMzIxLS4zMzkgMC0uMTg2LjEyMi0uMzM5LjMyMS0uMzM5LjE5LjAwMS4zMTkuMTQ3LjMxOS4zMzl6bS02LjgxNC0uMzM4Yy0uMTk5IDAtLjMyMS4xNTMtLjMyMS4zMzkgMCAuMTg2LjEyMi4zMzkuMzIxLjMzOS4xOSAwIC4zMTktLjE0Ni4zMTktLjMzOSAwLS4xOTMtLjEyOC0uMzM5LS4zMTktLjMzOXptMy4zOTEtLjAxMWMtLjE2NCAwLS4yNTcuMTA0LS4yODEuMjU3aC41NDljLS4wMjQtLjE2NC0uMTE5LS4yNTctLjI2OC0uMjU3em01LjI0LjAxMWMtLjE5OSAwLS4zMjEuMTUzLS4zMjEuMzM5IDAgLjE4Ni4xMjIuMzM5LjMyMS4zMzkuMTkgMCAuMzE5LS4xNDYuMzE5LS4zMzkgMC0uMTkzLS4xMjktLjMzOS0uMzE5LS4zMzl6bTYuNzE4LTEwLjEwNnYxMmMwIDEuMTA0LS44OTYgMi0yIDJoLTIwYy0xLjEwNCAwLTItLjg5Ni0yLTJ2LTEyYzAtMS4xMDQuODk2LTIgMi0yaDIwYzEuMTA0IDAgMiAuODk2IDIgMnptLTE4LjQ1NiA0Ljk4NWMwIDIuMjAxIDEuNzg0IDMuOTg1IDMuOTg1IDMuOTg1Ljc2OSAwIDEuNDg3LS4yMTkgMi4wOTYtLjU5Ni0uOTY3LS44MTMtMS41ODItMi4wMy0xLjU4Mi0zLjM4OXMuNjE2LTIuNTc2IDEuNTgyLTMuMzg5Yy0uNjA5LS4zNzctMS4zMjYtLjU5Ni0yLjA5Ni0uNTk2LTIuMiAwLTMuOTg1IDEuNzg0LTMuOTg1IDMuOTg1em0yLjM0NiA1LjMyNGMwLS4yNS0uMTU5LS40MTgtLjQxNi0uNDIxLS4xMzUtLjAwMi0uMjc0LjA0LS4zNzIuMTg4LS4wNzMtLjExNy0uMTg4LS4xODgtLjM1LS4xODgtLjExMyAwLS4yMjQuMDMzLS4zMS4xNTd2LS4xMzFoLS4yM3YxLjA1OGguMjMydi0uNTg3YzAtLjE4NC4xMDItLjI4MS4yNTktLjI4MS4xNTMgMCAuMjMuMS4yMy4yNzl2LjU4OWguMjMydi0uNTg3YzAtLjE4NC4xMDYtLjI4MS4yNTktLjI4MS4xNTcgMCAuMjMyLjEuMjMyLjI3OXYuNTg5aC4yMzR2LS42NjN6bTEuMjk3LS4zOTRoLS4yM3YuMTI4Yy0uMDczLS4wOTUtLjE4NC0uMTU1LS4zMzQtLjE1NS0uMjk3IDAtLjUyOS4yMzItLjUyOS41NTYgMCAuMzI0LjIzMi41NTYuNTI5LjU1Ni4xNTEgMCAuMjYxLS4wNi4zMzQtLjE1NXYuMTI4aC4yM3YtMS4wNTh6bTEuMTY0Ljc0YzAtLjE4Ni0uMTM5LS4yODMtLjM3LS4zMTdsLS4xMDgtLjAxNmMtLjEtLjAxMy0uMTc5LS4wMzMtLjE3OS0uMTA0IDAtLjA3OC4wNzUtLjEyNC4yMDEtLjEyNC4xMzUgMCAuMjY2LjA1MS4zMy4wOTFsLjEtLjE4NmMtLjExMS0uMDczLS4yNjMtLjExMS0uNDMyLS4xMTEtLjI2OCAwLS40NC4xMjgtLjQ0LjMzOSAwIC4xNzMuMTI4LjI3OS4zNjUuMzEybC4xMDguMDE2Yy4xMjYuMDE4LjE4Ni4wNTEuMTg2LjExMSAwIC4wODItLjA4NC4xMjgtLjI0MS4xMjgtLjE1OSAwLS4yNzQtLjA1MS0uMzUyLS4xMTFsLS4xMDguMTc5Yy4xMjYuMDk0LjI4NS4xMzguNDU4LjEzOC4zMDUgMCAuNDgyLS4xNDQuNDgyLS4zNDV6bTEuMDI1LjI2M2wtLjA2Ni0uMTk3Yy0uMDY5LjA0LS4xNDQuMDYtLjIwNC4wNi0uMTE1IDAtLjE1My0uMDcxLS4xNTMtLjE3N3YtLjQ3OGguMzc2di0uMjFoLS4zNzZ2LS4zMjFoLS4yMzJ2LjMyMWgtLjIxNXYuMjFoLjIxNXYuNDgzYzAgLjI0Ni4wOTUuMzkyLjM2Ny4zOTIuMS0uMDAxLjIxNS0uMDMyLjI4OC0uMDgzem0xLjE3My0uNDc0Yy0uMDAyLS4zMy0uMjA2LS41NTYtLjUwMy0uNTU2LS4zMSAwLS41MjcuMjI2LS41MjcuNTU2IDAgLjMzNi4yMjYuNTU2LjU0Mi41NTYuMTU5IDAgLjMwNS0uMDQuNDM0LS4xNDhsLS4xMTMtLjE3Yy0uMDg5LjA3MS0uMjAxLjExMS0uMzA4LjExMS0uMTQ4IDAtLjI4My0uMDY5LS4zMTctLjI1OWguNzg2bC4wMDYtLjA5em0uOTA4LS41MjZsLS4xNjQtLjAyOWMtLjEzMyAwLS4yMTkuMDYyLS4yNzkuMTU1di0uMTI4aC0uMjI4djEuMDU4aC4yM3YtLjU5NGMwLS4xNzUuMDc1LS4yNzIuMjI2LS4yNzJsLjE0NC4wMjcuMDcxLS4yMTd6bS4zMDguNTI2YzAtLjIwNC4xMzUtLjMzNi4zMTktLjMzOS4xIDAgLjE5LjAzMy4yNzcuMDk1bC4xMTEtLjE4NmMtLjExNS0uMDkxLS4yMjEtLjEyNi0uMzgxLS4xMjYtLjM0MSAwLS41NjQuMjM1LS41NjQuNTU2cy4yMjIuNTU2LjU2My41NTZjLjE1OSAwIC4yNjYtLjAzNS4zODEtLjEyNmwtLjExMS0uMTg2Yy0uMDg2LjA2Mi0uMTc3LjA5NS0uMjc3LjA5NS0uMTgzLS4wMDItLjMxOC0uMTM1LS4zMTgtLjMzOXptMS45MTYtLjUyOWgtLjIzdi4xMjhjLS4wNzMtLjA5NS0uMTg0LS4xNTUtLjMzNC0uMTU1LS4yOTcgMC0uNTI5LjIzMi0uNTI5LjU1NiAwIC4zMjMuMjMyLjU1Ni41MjkuNTU2LjE1MSAwIC4yNjEtLjA2LjMzNC0uMTU1di4xMjhoLjIzdi0xLjA1OHptLjk3NC4wMDNsLS4xNjQtLjAyOWMtLjEzMyAwLS4yMTkuMDYyLS4yNzkuMTU1di0uMTI4aC0uMjI4djEuMDU4aC4yM3YtLjU5NGMwLS4xNzUuMDc1LS4yNzIuMjI2LS4yNzJsLjE0NC4wMjcuMDcxLS4yMTd6bTEuMTYyLS40MjhoLS4yM3YuNTUzYy0uMDczLS4wOTUtLjE4NC0uMTU1LS4zMzQtLjE1NS0uMjk3IDAtLjUyOS4yMzItLjUyOS41NTYgMCAuMzIzLjIzMi41NTYuNTI5LjU1Ni4xNTEgMCAuMjYxLS4wNi4zMzQtLjE1NXYuMTI4aC4yM3YtMS40ODN6bS42MzktNC41MDVjMC0yLjIwMS0xLjc4NS0zLjk4NS0zLjk4NS0zLjk4NXMtMy45ODUgMS43ODQtMy45ODUgMy45ODVjMCAyLjIwMSAxLjc4NCAzLjk4NSAzLjk4NSAzLjk4NXMzLjk4NS0xLjc4NCAzLjk4NS0zLjk4NXoiLz48L3N2Zz4=">
+            <img
+                src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBkPSJNMTguNTMgMTAuMzM5bC0xLjAwOSAxLjA5MS0uOTc4LTEuMDkxaC0zLjE5N3YzLjMyOWgzLjE0N2wxLjAxNi0xLjEwMy45NzggMS4xMDNoMS4wMjJsLTEuNDg2LTEuNjU1IDEuNDg2LTEuNjc0aC0uOTc5em0tMi40MzkgMi42MzloLTEuOTU2di0uNjY1aDEuNzQzdi0uNjc3aC0xLjc0M3YtLjYwOGgxLjk5NGwuODcxLjk3Mi0uOTA5Ljk3OHptLTguNzE1LTIuNzUybC0uMDEtLjAyaC4wMXYuMDJ6bTIuOTk3IDIuMzdsLTEuMDQxLTIuMjU3aC0xLjI5OHYzLjE0N2wtMS4zNDgtMy4xNDdoLTEuMTg0bC0xLjQyMyAzLjMyOWguODY1bC4zMDctLjc0NmgxLjY1NWwuMzA3Ljc0NmgxLjYxOHYtMi42MDhsMS4xNTQgMi42MDhoLjcwMmwxLjE0Ny0yLjYwOC4wMDYgMi42MDhoLjc4NHYtMy4zMjloLTEuMjkybC0uOTU5IDIuMjU3em0tNC44NC0uMzY0bC41NDUtMS4zMjkuNTQ1IDEuMzI5aC0xLjA5em0xNi40NjctOC4yMzJoLTIwYy0xLjEwNCAwLTIgLjg5Ni0yIDJ2MTJjMCAxLjEwNC44OTYgMiAyIDJoMjBjMS4xMDQgMCAyLS44OTYgMi0ydi0xMmMwLTEuMTA0LS44OTYtMi0yLTJ6bS0xIDEwLjMyaC0yLjg1OWwtLjYzMy0uNzIxLS42NzcuNzIxaC0xMC4xMDdsLS4zMDEtLjc0aC0uNjlsLS4zMDEuNzRoLTIuNDMybDIuMDMxLTQuNjRoNC43NzFsLjUzMyAxLjE5OC41Mi0xLjE5OGg2LjA1NmwuNjE0LjcwOC42NTgtLjcwOGgyLjgxN2wtMi4wMzggMi4zMzIgMi4wMzggMi4zMDh6Ii8+PC9zdmc+">
+            <img
+                src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBkPSJNMjIgM2gtMjBjLTEuMTA0IDAtMiAuODk2LTIgMnYxNGMwIDEuMTA0Ljg5NiAyIDIgMmgyMGMxLjEwNCAwIDItLjg5NiAyLTJ2LTE0YzAtMS4xMDQtLjg5Ni0yLTItMnptLTExLjI5MiAxMi4xMWgtMS4zM2MtLjEyMiAwLS4yMTktLjEwMy0uMjEyLS4yMjQuMDI0LS4zODMuMjQ2LTEuNjQxIDEuMDE0LTYuNTg2LjAyNi0uMTczLjE3My0uMy4zNDYtLjNoMi40NDhjMS4zMSAwIDIuMjc3Ljc2OSAyLjAxIDIuMTQ3LS4yNzUgMS40MzMtMS4xNSAyLjEzLTIuNjc0IDIuMTNsLS43NTMuMDAxYy0uMzA5LjAwMS0uNDIzLjExOC0uNDYyLjM5M2wtLjM4NyAyLjQzOXptNS4wNjktMy4zMTRjLS4yODIgMS40NzMtMS4yNDkgMS45ODItMi40ODMgMS45ODJoLS4xOTFjLS4xNTEgMC0uMjc5LjExMS0uMzAzLjI2M2wtLjI2OCAxLjY5N2MtLjAyMy4xNTEtLjE1MS4yNjItLjMwMi4yNjJoLS45MTJjLS4xMyAwLS4yMjktLjExNi0uMjA5LS4yNDRsLjQ2Mi0yLjk2LjAyMS0uMDE5aC43MThjMS43NDUgMCAyLjgzNi0uODczIDMuMTU4LTIuNTIzLjI3MS4yNzIuMzY2LjYyNi4zNjYgMS0uMDAxLjE3OC0uMDIyLjM2MS0uMDU3LjU0MnoiLz48L3N2Zz4=">
+            <img
+                src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBkPSJNMjEuNSA2Yy4yNzYgMCAuNS4yMjQuNS41djExYzAgLjI3Ni0uMjI0LjUtLjUuNWgtMTljLS4yNzYgMC0uNS0uMjI0LS41LS41di0xMWMwLS4yNzYuMjI0LS41LjUtLjVoMTl6bTIuNSAwYzAtMS4xMDQtLjg5Ni0yLTItMmgtMjBjLTEuMTA1IDAtMiAuODk2LTIgMnYxMmMwIDEuMTA0Ljg5NSAyIDIgMmgyMGMxLjEwNCAwIDItLjg5NiAyLTJ2LTEyem0tMTIuNTkzIDEwYy0yLjIxMy4wMTEtNC4wMzUtMS43ODMtNC4wMzUtMy45NjUuMDAxLTIuMzg2IDEuODIyLTQuMDM1IDQuMDM1LTQuMDM1aDEuMDM3YzIuMTg3IDAgNC4xODMgMS42NDkgNC4xODMgNC4wMzUgMCAyLjE4Mi0xLjk5NiAzLjk2NS00LjE4MyAzLjk2NWgtMS4wMzd6bS4wMDktNy42NjljLTIuMDIyLjAwMS0zLjY2MSAxLjY0LTMuNjYxIDMuNjYyIDAgMi4wMjIgMS42MzkgMy42NjEgMy42NjEgMy42NjEgMi4wMjMgMCAzLjY2Mi0xLjYzOSAzLjY2Mi0zLjY2MSAwLTIuMDIyLTEuNjM5LTMuNjYxLTMuNjYyLTMuNjYyem0tLjgzMSA1LjgyOHYtNC4zMzJjLS44Ny4zMzUtMS40ODcgMS4xNzctMS40OSAyLjE2Ni4wMDIuOTg4LjYyIDEuODMxIDEuNDkgMi4xNjZ6bTMuMTUzLTIuMTY2Yy0uMDAyLS45ODktLjYyLTEuODMyLTEuNDkxLTIuMTY2djQuMzMzYy44NzEtLjMzNSAxLjQ4OS0xLjE3OCAxLjQ5MS0yLjE2N3oiLz48L3N2Zz4=">
+            <img
+                src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBkPSJNMjAuNTk2IDExLjE4NWgtLjE3NHYtLjkyNWguMTg0Yy4zNzEgMCAuNTczLjE1Ni41NzMuNDUzIDAgLjMwNy0uMjAyLjQ3Mi0uNTgzLjQ3MnptLTE2Ljg0LS44ODloLS4xNnYyLjAyMWguMTZjLjM4NSAwIC42MjktLjA3NC44MTYtLjI0My4yMDYtLjE4NC4zMy0uNDc3LjMzLS43NyAwLS4yOTMtLjEyNC0uNTc3LS4zMy0uNzYxLS4xOTctLjE3OC0uNDMxLS4yNDctLjgxNi0uMjQ3em0yMC4yNDQtNC4yOTZ2MTJjMCAxLjEwNC0uODk2IDItMiAyaC0yMGMtMS4xMDQgMC0yLS44OTYtMi0ydi0xMmMwLTEuMTA0Ljg5Ni0yIDItMmgyMGMxLjEwNCAwIDIgLjg5NiAyIDJ6bS00LjE3MyA2LjgzNWguNTk2di0xLjIyOGguMDc3bC44MjUgMS4yMjhoLjczM2wtLjk2Mi0xLjI4OGMuNDQ5LS4wOTEuNjk2LS4zOTguNjk2LS44NjcgMC0uNTcyLS4zOTQtLjkwMi0xLjA4Mi0uOTAyaC0uODg0djMuMDU3em0tMi4wODYgMGgxLjY5MXYtLjUxN2gtMS4wOTV2LS44MjVoMS4wNTV2LS41MThoLTEuMDU1di0uNjc4aDEuMDk1di0uNTE5aC0xLjY5MXYzLjA1N3ptLTMuMjA4LTMuMDU3bDEuMjk3IDMuMTM1aC4zMjFsMS4zMi0zLjEzNWgtLjY0NmwtLjgyNiAyLjA1My0uODE1LTIuMDUzaC0uNjUxem0tMy4wOTQgMS41NDVjMCAuOTE2Ljc0MiAxLjY1OSAxLjY1OSAxLjY1OS45MTYgMCAxLjY1OS0uNzQzIDEuNjU5LTEuNjU5cy0uNzQzLTEuNjU5LTEuNjU5LTEuNjU5LTEuNjU5Ljc0My0xLjY1OSAxLjY1OXptLTIuNTI4LS4wMTRjMCAuODk4LjcwNSAxLjU5NSAxLjYxMyAxLjU5NS4yNTcgMCAuNDc2LS4wNS43NDctLjE3OHYtLjcwMmMtLjIzOC4yMzktLjQ0OS4zMzUtLjcyLjMzNS0uNiAwLTEuMDI3LS40MzUtMS4wMjctMS4wNTQgMC0uNTg3LjQ0LTEuMDUuOTk5LTEuMDUuMjg0IDAgLjUuMTAyLjc0Ny4zNDR2LS43MDJjLS4yNjItLjEzMy0uNDc3LS4xODgtLjczMy0uMTg4LS45MDEgMC0xLjYyNi43MTEtMS42MjYgMS42em0tMy4zOTUgMGMwLS45MDItLjY3NC0xLjUzLTEuNjQxLTEuNTNoLS44NzV2My4wNTZoLjg3MWMuNDYzIDAgLjc5Ny0uMTA5IDEuMDkxLS4zNTMuMzQ4LS4yODkuNTU0LS43MjQuNTU0LTEuMTczem0uODctMS41MzFoLS41OTZ2My4wNTZoLjU5NnYtMy4wNTZ6bTEuNzI0IDIuMTU0YzAgLjI0OC0uMTk3LjQzMS0uNDYzLjQzMS0uMjg0IDAtLjUxMy0uMTQyLS42NTEtLjQwOGwtLjM4NS4zNzFjLjI3NS40MDMuNjA1LjU4MiAxLjA1OC41ODIuNjIgMCAxLjA1NC0uNDEyIDEuMDU0LTEuMDA0IDAtLjQ4Ni0uMjAxLS43MDUtLjg3OS0uOTUzLS4zNTgtLjEzMi0uNDYzLS4yMi0uNDYzLS4zODUgMC0uMTkzLjE4Ny0uMzM5LjQ0NC0uMzM5LjE3OSAwIC4zMjUuMDczLjQ4MS4yNDdsLjMxMi0uNDA4Yy0uMjU2LS4yMjQtLjU2My0uMzM4LS44OTgtLjMzOC0uNTQxIDAtLjk1My4zNzYtLjk1My44NzYgMCAuNDIxLjE5Mi42MzcuNzUyLjgzOC4yMzMuMDgyLjM1Mi4xMzcuNDEyLjE3NC4xMTkuMDc4LjE3OS4xODguMTc5LjMxNnptMTQuODkgMS4yMTdzLTUuNzMxIDQuMDQ0LTE2LjIyNiA1Ljg1NGgxNC45NzZjLjY5IDAgMS4yNS0uNTYgMS4yNS0xLjI1di00LjYwNHoiLz48L3N2Zz4=">
+        </div>
+        <span>Powered By Shopify</span>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+
+
+</body>
+
+</html>
